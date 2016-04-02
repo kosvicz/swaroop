@@ -13,7 +13,7 @@ class SchoolMember:
 
     def tell(self):
         """Вывести информацию."""
-        print('Имя:"{0}" Возраст:"{1}"'.format(self.name, self.age, end=" "))
+        print('Имя:"{0}" Возраст:"{1}"'.format(self.name, self.age), end=" ")
 
 
 class Teacher(SchoolMember):
@@ -47,4 +47,3 @@ s = Student('Swaroop', 25, 75)
 members = [t, s]
 for member in members:
     member.tell()
-
